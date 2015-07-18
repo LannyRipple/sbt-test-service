@@ -12,6 +12,9 @@ Include the following in your project (e.g., project/sbt-test-service.sbt)
 addSbtPlugin("com.github.lannyripple" % "sbt-test-service" % "0.1.0")
 ```
 
+At this time the plugin is not provided by repository.  Clone the code
+and 'sbt publish' or 'sbt publish-local' to make it available.
+
 # Usage
 
 Enable the plugin for your project and supply the desired testServiceScript setting.
@@ -31,3 +34,8 @@ lazy val myProject =
 After compile in Test finishes and before testing begins the testServiceScript
 will be invoked with an argument of "start".  At test cleanup the testServiceScript
 will be invoked with an argument of "stop".
+
+# Example
+
+The directory name `sandbox` in this project is a small sbt project which
+demonstrates the use of sbt-test-service.
