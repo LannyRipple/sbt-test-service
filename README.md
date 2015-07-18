@@ -1,7 +1,8 @@
 # sbt-test-service Plugin
 
 This plugin is designed to simplify testing that needs an external service
-to be running.
+to be running.  Rather than encode an sbt plugin for each service this
+plugin calls an external script to start and stop the needed service(s).
 
 # Setup
 
