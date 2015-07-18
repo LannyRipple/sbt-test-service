@@ -1,0 +1,15 @@
+#!/bin/bash
+
+case $1 in
+    start)
+        echo "starting test service"
+        echo "starting test service" >> target/test-service.log
+        ;;
+    stop)
+        echo "stopping test service"
+        echo "stopping test service" >> target/test-service.log
+        ;;
+    *)
+        echo "error: unknown service action"
+        ;;
+esac
